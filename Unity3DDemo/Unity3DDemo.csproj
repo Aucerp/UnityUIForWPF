@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CountdownTimer.cs" />
+    <Compile Include="MessageProcessor.cs" />
+    <Compile Include="TcpServer.cs" />
     <Compile Include="UnityApp.cs">
       <SubType>Component</SubType>
     </Compile>

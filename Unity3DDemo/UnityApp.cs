@@ -19,16 +19,14 @@ namespace Unity3DDemo
 
         private void StartUnityApp()
         {
-            var path = AppDomain.CurrentDomain.BaseDirectory + "Visualization\\U3DVisualization.exe";
             _process = new Process
             {
                 StartInfo =
                 {
-                    FileName = AppDomain.CurrentDomain.BaseDirectory + "Visualization\\BallGame.exe",
+                    FileName = AppDomain.CurrentDomain.BaseDirectory + "Visualization\\UnityUIForWPF.exe",
                     Arguments = "-parentHWND " + Handle.ToInt32() + " " + Environment.CommandLine,
                     UseShellExecute = true,
                     CreateNoWindow = true,
-                    //WindowStyle = ProcessWindowStyle.Hidden
                 }
             };
 
